@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+nav * {
+  box-sizing: border-box !important;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(48, 32, 32);
+  background: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-family: Georgia, serif;
+  font-size: 34px;
+  margin-bottom: 14px;
+  color: #1a1a1a;
+}
+
+h2 em {
+  color: rgb(151, 4, 4);
+  font-style: italic;
+}
+
+p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #8B0000;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.label::before {
+  content: '';
+  width: 20px;
+  height: 2px;
+  background: #8B0000;
+}
+
+.btn-red {
+  background: #8B0000;
+  color: #fff;
+  padding: 12px 28px;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn-red:hover {
+  background: #a33;
+}
+
+.btn-white {
+  background: transparent;
+  color: #fff;
+  padding: 12px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn-white:hover {
+  border-color: #C9A84C;
+  color: #C9A84C;
+}
+
+/* Navbar */
+nav {
+  width: 100%;
+  background-color: white;
+  z-index: 999;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  position: fixed;
+  top: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.navbutton {
+  background-color: darkred;
+  text-align: center;
+  color: aliceblue;
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  margin: 0 20px;
+}
+
+/* This locks the nav height and prevents jumping */
+nav {
+  height: 80px !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 0 30px !important;
+  position: fixed !important;
+  top: 0 !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* This locks the logo size so it can't shift */
+.nav-logo img {
+  height: 60px !important;
+  width: 210px !important;
+  display: block !important;
+}
+
+/* This locks the button size and padding */
+.navbutton {
+  padding: 10px 20px !important;
+  font-size: 13px !important;
+  height: auto !important;
+  line-height: 1 !important;
+}
+
+.navbutton:hover {
+  background-color: #a00000;
+  transform: translateY(-1px);
+}
+
+.nav-logo {
+  width: 210px;
+  /* Match your image width */
+  flex-shrink: 0;
+  /* Prevents the logo from getting squashed on small screens */
+}
+
+.nav-logo img {
+  height: 60px;
+  width: 210px;
+  /* border: 1px solid red; */
+
+}
+
+.nav-logo {
+  width: 210px;
+  /* Match your image width */
+  flex-shrink: 0;
+  /* Prevents the logo from getting squashed on small screens */
+}
+
+.navlinks {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgb(24, 23, 23);
+  transition: color 0.2s ease;
+  font-weight: bolder;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.navlinks a:hover {
+  color: darkred;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.navlinks a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nphone-icon {
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  padding: 8px 9px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+}
+
+.number {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a1a;
+  letter-spacing: 0.3px;
+}
+
+@media (max-width: 767px) {
+  .hero {
+    margin-top: 64px;
+    /* matches the smaller nav height */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    margin-top: 58px;
+  }
+}
+
+/* ── Mobile Nav Fix ── */
+@media (max-width: 991px) {
+  nav {
+    padding: 0 16px !important;
+    height: 64px !important;
+  }
+
+  .nav-logo img {
+    height: 42px !important;
+    width: 148px !important;
+  }
+
+  .nav-logo {
+    width: 148px !important;
+  }
+
+  /* Hide everything in nav-right on tablet/mobile */
+  .nav-right {
+    display: none !important;
+  }
+
+  .nphone-icon {
+    display: none !important;
+  }
+
+  .number {
+    display: none !important;
+  }
+
+  .navbutton {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    padding: 0 12px !important;
+    height: 58px !important;
+  }
+
+  .nav-logo img {
+    height: 36px !important;
+    width: 126px !important;
+  }
+
+  .nav-logo {
+    width: 126px !important;
+  }
+}
+
+/* ── Hamburger Button ── */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px;
+}
+
+.hamburger span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: #1a1a1a;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── Mobile Nav (Global — applies to ALL pages) ── */
+@media (max-width: 991px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-right,
+  .nphone-icon,
+  .number,
+  .navbutton {
+    display: none !important;
+  }
+
+  .navlinks {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column !important;
+    gap: 0 !important;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    z-index: 998;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .navlinks.open {
+    max-height: 400px;
+    padding: 12px 0 20px;
+  }
+
+  .navlinks a {
+    padding: 13px 28px;
+    display: block;
+    border-bottom: 1px solid #f0f0f0;
+  }
+}

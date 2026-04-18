@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Insurance Plans - Drivora</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="Style/Global.css">
+  <link rel="stylesheet" href="Style/Plans.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+    <nav class="d-flex align-items-center justify-content-between flex-row">
+        <div class="nav-logo">
+            <img src="Assets/Safe Carz.png" alt="Safe Carz Logo">
+        </div>
+        <div class="navlinks d-flex gap-5">
+            <a href="Index.html" >Home</a>
+            <a href="companies.html">Companies</a>
+            <a href="Vehicles.html">Vechicles</a>
+            <a href="Plans.html" style="color: #8B0000;">Plans</a>
+            <a href="About.html">About</a>
+        </div>
+        <div class="nav-right">
+            <div class="nphone-icon">
+                <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="number">+92-21-345-6789</div>
+            <a href="Contact.html"><button class="navbutton">Contact Us</button></a>
+        </div>
+
+        <button class="hamburger" aria-label="Toggle menu">
+  <span></span><span></span><span></span>
+</button>
+    </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="tag">All Insurance Plans</div>
+    <h1>Find the <em>Perfect</em> Plan</h1>
+    <p>Browse and filter plans from Pakistan's top insurers. Compare coverage, pricing, and features — all in one place.</p>
+  </section>
+
+  <!-- DUAL FILTER BAR -->
+  <div class="filter-bar">
+
+    <!-- Row 1: Insurer -->
+    <div class="filter-row">
+      <span class="filter-label">Insurer</span>
+      <button class="tab-btn active" data-insurer="all">All Companies</button>
+      <button class="tab-btn" data-insurer="zurich">Zurich</button>
+      <button class="tab-btn" data-insurer="efu">EFU General</button>
+      <button class="tab-btn" data-insurer="adamjee">Adamjee</button>
+      <button class="tab-btn" data-insurer="jubilee">Jubilee</button>
+      <button class="tab-btn" data-insurer="tpl">TPL</button>
+      <button class="tab-btn" data-insurer="salama">Salama</button>
+    </div>
+
+    <!-- Row 2: Vehicle Type (four-wheeler & two-wheeler only) -->
+    <div class="filter-row">
+      <span class="filter-label">Vehicle Type</span>
+      <button class="tab-btn active" data-type="all">All Types</button>
+      <button class="tab-btn" data-type="four-wheeler">
+        <i class="fas fa-car" style="margin-right:6px;font-size:10px;"></i>Four Wheelers
+      </button>
+      <button class="tab-btn" data-type="two-wheeler">
+        <i class="fas fa-motorcycle" style="margin-right:6px;font-size:10px;"></i>Two Wheelers
+      </button>
+    </div>
+
+  </div>
+
+  <!-- RESULTS BAR -->
+  <div class="results-bar">
+    <div class="results-count">Showing <span id="visibleCount">36</span> plans</div>
+    <div class="sort-wrapper">
+      Sort by:
+      <select id="sortSelect" onchange="sortPlans()">
+        <option value="default">Default</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- PLANS GRID — cards injected here by Plans.js -->
+  <section class="plans-section">
+    <div class="plans-grid" id="plansGrid">
+
+      <!-- No results placeholder (always in DOM, hidden by JS) -->
+      <div class="no-results" id="noResults" style="display:none;">
+        <div class="icon"><i class="fas fa-search"></i></div>
+        <h4>No plans found</h4>
+        <p>Try a different insurer or vehicle type filter.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta-section">
+    <h2 class="fade">Not Sure Which Plan <em>Is Right?</em></h2>
+    <p class="fade">Our licensed advisors will match you with the best plan for your vehicle and budget — for free.</p>
+    <div class="cta-btns fade">
+      <a href="Contact.html" class="btn-gold">Talk to an Advisor</a>
+      <a href="Contact.html" class="btn-white-outline">Call Us Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="sc-footer">
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+        <div class="footer-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px;">
+            
+            <div class="footer-col">
+                <h4 class="sc-footer-heading">Safe Carz</h4>
+                <p class="sc-footer-text">
+                    Pakistan's premier digital insurance marketplace. We simplify the process of finding the right protection for your vehicle with transparency and speed.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="sc-footer-heading">Quick Links</h4>
+                <ul class="sc-footer-links">
+                    <li><a href="HomePage.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="companies.html"><i class="fas fa-chevron-right"></i> Companies</a></li>
+                    <li><a href="Vehicles.html"><i class="fas fa-chevron-right"></i> Vehicles</a></li>
+                    <li><a href="Plans.html"><i class="fas fa-chevron-right"></i> Insurance Plans</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="sc-footer-heading">Contact Us</h4>
+                <div class="sc-footer-contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>123 Business Avenue, Shahrah-e-Faisal, Karachi</span>
+                </div>
+                <div class="sc-footer-contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:+92213456789">+92-21-345-6789</a>
+                </div>
+                <div class="sc-footer-contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:support@safecarz.pk">support@safecarz.pk</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="sc-footer-heading">Follow Us</h4>
+                <div class="sc-social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="sc-footer-hr"></div>
+        <p class="sc-footer-bottom">&copy; 2026 Safe Carz Insurance Brokers. All Rights Reserved. Licensed by SECP.</p>
+    </div>
+ </footer>
+
+
+  <script src="Scripts/Plans.js"></script>
+</body>
+</html>

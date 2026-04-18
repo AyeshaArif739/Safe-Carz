@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vehicles - Drivora</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="Style/Global.css">
+  <link rel="stylesheet" href="Style/Vehicles.css">
+  <style>
+   
+  
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+    <nav class="d-flex align-items-center justify-content-between flex-row">
+        <div class="nav-logo">
+            <img src="Assets/Safe Carz.png" alt="Safe Carz Logo">
+        </div>
+        <div class="navlinks d-flex gap-5">
+            <a href="Index.html" >Home</a>
+            <a href="companies.html">Companies</a>
+            <a href="Vehicles.html" style="color: #8B0000;">Vechicles</a>
+            <a href="Plans.html">Plans</a>
+            <a href="About.html">About</a>
+        </div>
+        <div class="nav-right">
+            <div class="nphone-icon">
+                <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="number">+92-21-345-6789</div>
+            <a href="Contact.html"><button class="navbutton">Contact Us</button></a>
+        </div>
+
+        <button class="hamburger" aria-label="Toggle menu">
+  <span></span><span></span><span></span>
+</button>
+    </nav>
+
+  <!-- MOBILE MENU
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="HomePage.html">Home</a>
+    <a href="Companies.html">Companies</a>
+    <a href="Vehicles.html" class="active-link">Vehicles</a>
+    <a href="Plans.html">Plans</a>
+    <a href="About.html">About</a>
+    <a href="Contact.html" class="mob-contact-btn">Contact Us</a>
+  </div> -->
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="tag">Insurance Plans by Vehicle</div>
+    <h1>Compare Plans for <em>Your Vehicle</em></h1>
+    <p>Browse insurance plans from Pakistan's top insurers — filter by vehicle type to find the best coverage.</p>
+  </section>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <div class="filter-row">
+      <span class="filter-label">Vehicle Type</span>
+      <button class="tab-btn active" data-cat="all">
+        All Vehicles
+      </button>
+      <button class="tab-btn" data-cat="four-wheeler">
+        <i class="fas fa-car" style="margin-right:6px;font-size:10px;"></i>Four Wheelers
+      </button>
+      <button class="tab-btn" data-cat="two-wheeler">
+        <i class="fas fa-motorcycle" style="margin-right:6px;font-size:10px;"></i>Two Wheelers
+      </button>
+    </div>
+  </div>
+
+  <!-- VEHICLES SECTION -->
+  <section class="vehicles-section">
+
+    <!-- FOUR WHEELERS BLOCK -->
+    <div class="vehicle-section-block fade" id="block-four" data-block="four-wheeler">
+      <div class="vehicle-section-title">
+        <div class="vtitle-icon"><i class="fas fa-car"></i></div>
+        <h3>Four Wheeler Plans</h3>
+        <span>Comprehensive &amp; Third Party</span>
+      </div>
+      <div class="plans-grid" id="grid-four">
+        <div class="no-results" id="noResults-four" style="display:none;">
+          <div class="icon"><i class="fas fa-car"></i></div>
+          <h4>No plans found</h4>
+          <p>Check back soon for more plans.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- TWO WHEELERS BLOCK -->
+    <div class="vehicle-section-block fade" id="block-two" data-block="two-wheeler">
+      <div class="vehicle-section-title">
+        <div class="vtitle-icon"><i class="fas fa-motorcycle"></i></div>
+        <h3>Two Wheeler Plans</h3>
+        <span>Bikes &amp; Motorcycles</span>
+      </div>
+      <div class="plans-grid" id="grid-two">
+        <div class="no-results" id="noResults-two" style="display:none;">
+          <div class="icon"><i class="fas fa-motorcycle"></i></div>
+          <h4>No plans found</h4>
+          <p>Check back soon for more plans.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta-section">
+    <h2 class="fade">Can't Find Your <em>Vehicle?</em></h2>
+    <p class="fade">Our licensed advisors can find coverage for any make or model — just give us a call or drop a message.</p>
+    <div class="cta-btns fade">
+      <a href="Contact.html" class="btn-gold">Talk to an Advisor</a>
+      <a href="Contact.html" class="btn-white-outline">Call Us Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="sc-footer">
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+        <div class="footer-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px;">
+            
+            <div class="footer-col">
+                <h4 class="sc-footer-heading">Safe Carz</h4>
+                <p class="sc-footer-text">
+                    Pakistan's premier digital insurance marketplace. We simplify the process of finding the right protection for your vehicle with transparency and speed.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="sc-footer-heading">Quick Links</h4>
+                <ul class="sc-footer-links">
+                    <li><a href="HomePage.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="companies.html"><i class="fas fa-chevron-right"></i> Companies</a></li>
+                    <li><a href="Vehicles.html"><i class="fas fa-chevron-right"></i> Vehicles</a></li>
+                    <li><a href="Plans.html"><i class="fas fa-chevron-right"></i> Insurance Plans</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="sc-footer-heading">Contact Us</h4>
+                <div class="sc-footer-contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>123 Business Avenue, Shahrah-e-Faisal, Karachi</span>
+                </div>
+                <div class="sc-footer-contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:+92213456789">+92-21-345-6789</a>
+                </div>
+                <div class="sc-footer-contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:support@safecarz.pk">support@safecarz.pk</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="sc-footer-heading">Follow Us</h4>
+                <div class="sc-social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="sc-footer-hr"></div>
+        <p class="sc-footer-bottom">&copy; 2026 Safe Carz Insurance Brokers. All Rights Reserved. Licensed by SECP.</p>
+    </div>
+ </footer>
+
+
+  <script src="Scripts/Vehicles.js"></script>
+</body>
+</html> 

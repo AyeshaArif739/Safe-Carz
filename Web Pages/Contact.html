@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Drivora</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="Style/Contact.css">
+  <link rel="stylesheet" href="Style/Global.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="d-flex align-items-center justify-content-between flex-row">
+        <div class="nav-logo">
+            <img src="Assets/Safe Carz.png" alt="Safe Carz Logo">
+        </div>
+        <div class="navlinks d-flex gap-5">
+          <a href="Index.html" >Home</a>
+          <a href="companies.html">Companies</a>
+          <a href="Vehicles.html">Vechicles</a>
+          <a href="Plans.html">Plans</a>
+          <a href="About.html">About</a>
+        </div>
+        <div class="nav-right">
+          <div class="nphone-icon">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <div class="number">+92-21-345-6789</div>
+            <a href="Contact.html"><button class="navbutton">Contact Us</button></a>
+          </div>
+
+          
+        <button class="hamburger" aria-label="Toggle menu">
+  <span></span><span></span><span></span>
+</button>
+      </nav>
+  <!-- HERO SECTION -->
+  <section class="page-hero">
+    <div class="tag">We're Here to Help</div>
+    <h1>Get in Touch <em>With Us</em></h1>
+    <p>Have questions about a plan, need to file a claim, or want a free quote? Our team is ready to assist you — fast.</p>
+  </section>
+
+  <!-- CONTACT INFO CARDS -->
+  <section class="info-section">
+    <p class="label fade" style="justify-content:center;">Reach Us Anytime</p>
+    <h2 class="fade" style="text-align:center;">Contact <em>Details</em></h2>
+
+    <div class="info-grid">
+      <div class="info-card fade">
+        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+        <h4>Our Office</h4>
+        <p>123 Insurance Lane, PECHS<br>Karachi, Sindh, Pakistan</p>
+      </div>
+      <div class="info-card fade">
+        <div class="icon"><i class="fas fa-envelope"></i></div>
+        <h4>Email Us</h4>
+        <p><a href="mailto:info@drivora.pk">info@drivora.pk</a><br><a href="mailto:support@drivora.pk">support@drivora.pk</a></p>
+      </div>
+      <div class="info-card fade">
+        <div class="icon"><i class="fas fa-phone-alt"></i></div>
+        <h4>Call Us</h4>
+        <p><a href="tel:+922134567890">+92-21-345-6789</a><br>24/7 Helpline Available</p>
+      </div>
+      <div class="info-card fade">
+        <div class="icon"><i class="fas fa-clock"></i></div>
+        <h4>Working Hours</h4>
+        <p>Mon – Sat: 9AM – 7PM<br>24/7 Helpline Available</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <!-- <section class="form-section">
+    <div class="form-wrapper fade">
+      <p class="label" style="justify-content:center; margin-bottom:8px;">Send a Message</p>
+      <h2>How Can We <em>Help You?</em></h2>
+
+      <form id="contactForm">
+        <div class="form-row">
+          <div>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+          </div>
+          <div>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="+92 300 0000000">
+          </div>
+          <div>
+            <label for="subject">Subject</label>
+            <select id="subject">
+              <option value="">Select a topic</option>
+              <option>Get a Quote</option>
+              <option>File a Claim</option>
+              <option>Plan Inquiry</option>
+              <option>General Question</option>
+            </select>
+          </div>
+        </div>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" placeholder="Describe how we can help you..." required></textarea>
+
+        <button type="submit" class="btn-submit">Send Message</button>
+        <div class="alert-box alert-success" id="successAlert">✅ Thank you! Your message has been sent. We'll get back to you shortly.</div>
+        <div class="alert-box alert-danger"  id="errorAlert">⚠️ Please fill out all required fields.</div>
+      </form>
+    </div>
+  </section> -->
+
+  <!-- LOCATION CARD -->
+<!-- <section class="map-section">
+  <div class="map-wrapper fade">
+    <p class="label" style="justify-content:center;">Find Us</p>
+    <h2 style="text-align:center; margin-bottom:24px;">Our <em>Location</em></h2>
+    
+    <div class="location-card">
+      <div class="location-icon">
+        <i class="fas fa-map-marker-alt"></i>
+      </div>
+      <h4>Drivora Office</h4>
+      <p>123 Insurance Lane, PECHS<br>Karachi, Sindh, Pakistan</p>
+      <a href="https://www.google.com/maps/search/?api=1&query=123+Insurance+Lane+PECHS+Karachi" 
+         target="_blank" 
+         class="btn-directions">
+        <i class="fas fa-directions"></i> Get Directions
+      </a>
+    </div>
+  </div>
+</section> -->
+
+<!-- CONTACT FORM & ADDRESS SIDE-BY-SIDE -->
+<section class="form-section">
+  <div class="contact-container fade">
+    
+    <!-- LEFT: Contact Form -->
+    <div class="form-wrapper">
+      <p class="label" style="justify-content:center; margin-bottom:8px;">Send a Message</p>
+      <h2 style="text-align:center; margin-bottom:24px;">How Can We <em>Help You?</em></h2>
+      <form id="contactForm">
+        <div class="form-row">
+          <div>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+          </div>
+          <div>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="+92 300 0000000">
+          </div>
+          <div>
+            <label for="subject">Subject</label>
+            <select id="subject">
+              <option value="">Select a topic</option>
+              <option>Get a Quote</option>
+              <option>File a Claim</option>
+              <option>Plan Inquiry</option>
+              <option>General Question</option>
+            </select>
+          </div>
+        </div>
+        <label for="message">Your Message</label>
+        <textarea id="message" placeholder="Describe how we can help you..." required></textarea>
+        <button type="submit" class="btn-submit">Send Message</button>
+        <div class="alert-box alert-success" id="successAlert">✅ Thank you! Your message has been sent. We'll get back to you shortly.</div>
+        <div class="alert-box alert-danger" id="errorAlert">⚠️ Please fill out all required fields.</div>
+      </form>
+    </div>
+
+    <!-- RIGHT: Address & Mail (Creative Sidebar) -->
+    <div class="contact-sidebar">
+      <div class="sidebar-header">
+        <p class="label">Visit Our Store</p>
+        <h2>Our <em>Address</em></h2>
+      </div>
+      
+      <div class="info-row">
+        <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="info-text">
+          <h4>Safe Carz Head Office</h4>
+          <p>123 Insurance Lane, PECHS<br>Karachi, Sindh, Pakistan</p>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="info-row">
+        <div class="icon-box"><i class="fas fa-envelope"></i></div>
+        <div class="info-text">
+          <h4>Email Us Directly</h4>
+          <a href="mailto:info@safecarz.pk" class="mail-link">info@safecarz.pk</a>
+          <span class="mail-hint">Click to open your default mail app</span>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="info-row">
+        <div class="icon-box"><i class="fas fa-clock"></i></div>
+        <div class="info-text">
+          <h4>Working Hours</h4>
+          <p>Mon – Sat: 9:00 AM – 7:00 PM</p>
+        </div>
+      </div>
+
+      <a href="https://www.google.com/maps/search/?api=1&query=123+Insurance+Lane+PECHS+Karachi" 
+         target="_blank" 
+         class="btn-directions">
+        <i class="fas fa-directions"></i> Open in Google Maps
+      </a>
+    </div>
+
+  </div>
+</section>
+
+  <!-- CTA STRIP -->
+  <section class="contact-cta">
+    <h2 class="fade">Prefer to Talk <em>Directly?</em></h2>
+    <p class="fade">Our licensed advisors are available Mon–Sat, 9AM to 7PM. Call us or email anytime.</p>
+    <div class="cta-btns fade">
+      <a href="mailto:info@drivora.pk" class="btn-gold">Email Us</a>
+      <a href="tel:+922134567890" class="btn-white-outline">+92-21-345-6789</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+ <footer class="sc-footer">
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+        <div class="footer-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px;">
+            
+            <div class="footer-col">
+                <h4 class="sc-footer-heading">Safe Carz</h4>
+                <p class="sc-footer-text">
+                    Pakistan's premier digital insurance marketplace. We simplify the process of finding the right protection for your vehicle with transparency and speed.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="sc-footer-heading">Quick Links</h4>
+                <ul class="sc-footer-links">
+                    <li><a href="HomePage.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="Companies.html"><i class="fas fa-chevron-right"></i> Companies</a></li>
+                    <li><a href="Vehicles.html"><i class="fas fa-chevron-right"></i> Vehicles</a></li>
+                    <li><a href="Plans.html"><i class="fas fa-chevron-right"></i> Insurance Plans</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="sc-footer-heading">Contact Us</h4>
+                <div class="sc-footer-contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>123 Business Avenue, Shahrah-e-Faisal, Karachi</span>
+                </div>
+                <div class="sc-footer-contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:+92213456789">+92-21-345-6789</a>
+                </div>
+                <div class="sc-footer-contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:support@safecarz.pk">support@safecarz.pk</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="sc-footer-heading">Follow Us</h4>
+                <div class="sc-social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="sc-footer-hr"></div>
+        <p class="sc-footer-bottom">&copy; 2026 Safe Carz Insurance Brokers. All Rights Reserved. Licensed by SECP.</p>
+    </div>
+ </footer>
+
+  <script src="Scripts/Contact.js"></script>
+</body>
+</html>
