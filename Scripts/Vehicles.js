@@ -1,11 +1,6 @@
-// ═══════════════════════════════════════════════════
-//  VEHICLE DATA
-//  Each entry = one card. cat: 'four-wheeler' | 'two-wheeler'
-//  features: array of { text, included: true/false }
-// ═══════════════════════════════════════════════════
 var VEHICLES = [
 
-  // ══════════════════ FOUR WHEELERS ══════════════════
+  //  FOUR WHEELERS 
 
   // ADAMJEE
   { cat:'four-wheeler', company:'Adamjee Insurance', sub:'Est. 1960 · SECP Licensed',
@@ -161,7 +156,7 @@ var VEHICLES = [
       {text:'Property Damage',inc:true},{text:'Own Damage',inc:false},
       {text:'Theft',inc:false}] },
 
-  // ══════════════════ TWO WHEELERS ══════════════════
+  //  TWO WHEELERS 
 
   // ADAMJEE
   { cat:'two-wheeler', company:'Adamjee Insurance', sub:'Est. 1960 · SECP Licensed',
@@ -319,14 +314,10 @@ var VEHICLES = [
 
 ];
 
-// ─────────────────────────────────────────────────────
 //  STATE
-// ─────────────────────────────────────────────────────
 var activeCat = 'all';
 
-// ─────────────────────────────────────────────────────
 //  INTERSECTION OBSERVER
-// ─────────────────────────────────────────────────────
 var obs = new IntersectionObserver(function(entries) {
   entries.forEach(function(e) {
     if (e.isIntersecting) {
@@ -338,9 +329,7 @@ var obs = new IntersectionObserver(function(entries) {
 
 document.querySelectorAll('.fade').forEach(function(el) { obs.observe(el); });
 
-// ─────────────────────────────────────────────────────
 //  BUILD CARD
-// ─────────────────────────────────────────────────────
 function buildCard(v, index) {
   var card = document.createElement('div');
   card.className = 'plan-card card-enter';
@@ -382,9 +371,7 @@ function buildCard(v, index) {
   return card;
 }
 
-// ─────────────────────────────────────────────────────
 //  RENDER BOTH SECTIONS
-// ─────────────────────────────────────────────────────
 function renderAll() {
   ['four-wheeler', 'two-wheeler'].forEach(function(cat) {
     var key   = cat === 'four-wheeler' ? 'four' : 'two';
@@ -417,9 +404,7 @@ function renderAll() {
   });
 }
 
-// ─────────────────────────────────────────────────────
 //  FILTER TAB EVENTS
-// ─────────────────────────────────────────────────────
 document.querySelectorAll('.tab-btn').forEach(function(btn) {
   btn.addEventListener('click', function() {
     document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
@@ -429,9 +414,7 @@ document.querySelectorAll('.tab-btn').forEach(function(btn) {
   });
 });
 
-// ─────────────────────────────────────────────────────
 //  HAMBURGER NAV
-// ─────────────────────────────────────────────────────
 var hamburger = document.getElementById('hamburger');
 var mobileMenu = document.getElementById('mobileMenu');
 
@@ -457,14 +440,9 @@ if (hamburger && mobileMenu) {
     }
   });
 }
-
-// ─────────────────────────────────────────────────────
-//  INIT
-// ─────────────────────────────────────────────────────
 renderAll();
 
 
-// REPLACE the hamburger section in Vehicles.js with this:
 var hamburger = document.querySelector('.hamburger');
 var navlinks = document.querySelector('.navlinks');
 

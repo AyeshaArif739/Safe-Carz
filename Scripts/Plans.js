@@ -1,9 +1,6 @@
-// ═══════════════════════════════════════════════════
-//  PLAN DATA  — 6 plans per insurer (3 four-wheeler, 3 two-wheeler)
-// ═══════════════════════════════════════════════════
 var PLANS = [
 
-  // ── ZURICH ──────────────────────────────────────
+  // ── ZURICH 
   { insurer:'zurich', type:'four-wheeler', price:18000, badge:'Most Popular',
     company:'Zurich Insurance', sub:'Est. 1872 · SECP Licensed',
     name:'Comprehensive Cover', make:'Four Wheeler · All Makes', tag:'Comprehensive',
