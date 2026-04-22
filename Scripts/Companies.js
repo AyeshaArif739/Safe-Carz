@@ -1,28 +1,20 @@
-// Set active company to 'all' on page load
 let activeCompany = 'all';
-
-// Show all panels on page load
 document.querySelectorAll('.company-panel').forEach(panel => {
   panel.style.display = 'block';
 });
 
-// Handle company filter button clicks
 document.querySelectorAll('.company-btn').forEach(button => {
-  button.addEventListener('click', function() {
-    // Remove 'active' class from all buttons
+  button.addEventListener('click', function () {
     document.querySelectorAll('.company-btn').forEach(btn => {
       btn.classList.remove('active');
     });
-    // Add 'active' class to clicked button
     this.classList.add('active');
-    // Update active company
     activeCompany = this.dataset.company;
-    // Apply filter
     applyFilters();
   });
 });
 
-// Apply filters based on activeCompany
+// Filter 
 function applyFilters() {
   if (activeCompany === 'all') {
     document.querySelectorAll('.company-panel').forEach(panel => {
@@ -32,7 +24,6 @@ function applyFilters() {
     document.querySelectorAll('.company-panel').forEach(panel => {
       panel.style.display = 'none';
     });
-    // Show only the selected company panel
     const panelId = 'panel-' + activeCompany;
     const selectedPanel = document.getElementById(panelId);
     if (selectedPanel) {
@@ -41,9 +32,8 @@ function applyFilters() {
   }
 }
 
- // 1. THE DATA (Array of Objects)
-    // We use 'null' for tags when a plan shouldn't have one (like "Most Popular")
-    const insuranceData = [
+//  Array Of Objects 
+const insuranceData = [
   {
     id: "zurich",
     name: "Zurich Insurance",
@@ -123,8 +113,8 @@ function applyFilters() {
     ]
   }
 ];
-    
-  const renderContainer = document.getElementById('companies-render-container');
+
+const renderContainer = document.getElementById('companies-render-container');
 
 function renderAllCompanies() {
   renderContainer.innerHTML = '';
@@ -184,7 +174,7 @@ function renderAllCompanies() {
     renderContainer.innerHTML += panelHtml;
   });
 
-  // Hamburger runs AFTER render so DOM is ready
+  // Hamburger Nav
   const hamburger = document.querySelector('.hamburger');
   const navlinks = document.querySelector('.navlinks');
   if (hamburger && navlinks) {
@@ -200,5 +190,4 @@ function renderAllCompanies() {
     });
   }
 }
-
 renderAllCompanies();

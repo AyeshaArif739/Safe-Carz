@@ -67,9 +67,7 @@ nav {
   }
 }
 
-/* =========================================
-   2. LABELS & COMMON
-   ========================================= */
+/* Form Labels */
 .label {
   font-size: 11px;
   font-weight: 700;
@@ -89,185 +87,7 @@ nav {
   background: #8B0000;
 }
 
-/* =========================================
-   3. INFO CARDS (HOMEPAGE-APPROVED EFFECTS)
-   ========================================= */
-.info-section {
-  padding: 80px 50px 40px;
-}
-
-.info-section h2 {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.info-section .label {
-  justify-content: center;
-}
-
-.info-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 22px;
-  margin-top: 44px;
-}
-
-.info-card {
-  background: #fff;
-  border: 1px solid #e0e0e0;
-  border-top: 3px solid #8B0000;
-  padding: 32px 22px;
-  border-radius: 6px;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  text-align: center;
-  box-shadow:
-    0 1px 2px rgba(0, 0, 0, 0.06),
-    0 2px 4px rgba(0, 0, 0, 0.06),
-    0 4px 8px rgba(0, 0, 0, 0.04);
-  transition:
-    transform 0.35s cubic-bezier(0.22, 0.61, 0.36, 1),
-    box-shadow 0.35s cubic-bezier(0.22, 0.61, 0.36, 1),
-    border-color 0.3s;
-}
-
-/* Shimmer Beam */
-.info-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -80%;
-  width: 60%;
-  height: 100%;
-  background: linear-gradient(105deg, transparent 40%, rgba(255, 255, 255, 0.6) 50%, transparent 60%);
-  transform: skewX(-15deg);
-  transition: left 0.6s ease;
-  pointer-events: none;
-  z-index: 2;
-}
-
-/* Inner Highlight Rim */
-.info-card::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 6px;
-  border-top: 1px solid rgba(255, 255, 255, 0.85);
-  pointer-events: none;
-  z-index: 3;
-}
-
-/* Hover Lift & Shadow */
-.info-card:hover,
-.info-card.show:hover {
-  transform: translateY(-8px) scale(1.01) !important;
-  border-color: #c0c0c0;
-  border-top: 3px solid #8B0000;
-  box-shadow:
-    0 2px 4px rgba(0, 0, 0, 0.06),
-    0 6px 12px rgba(0, 0, 0, 0.08),
-    0 16px 32px rgba(0, 0, 0, 0.10),
-    0 24px 48px rgba(139, 0, 0, 0.07);
-}
-
-.info-card:hover::before {
-  left: 120%;
-}
-
-.info-card>* {
-  position: relative;
-  z-index: 1;
-}
-
-.info-card .icon {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: #fff0f0;
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 16px;
-  color: #8B0000;
-  transition: transform 0.4s, background 0.3s, color 0.3s;
-}
-
-.info-card:hover .icon {
-  background: #8B0000;
-  color: #fff;
-  transform: rotate(8deg) scale(1.15);
-}
-
-.info-card h4 {
-  font-family: Georgia, serif;
-  font-size: 15px;
-  color: #1a1a1a;
-  margin-bottom: 8px;
-}
-
-.info-card p {
-  font-size: 13px;
-}
-
-.info-card a {
-  color: #8B0000;
-  position: relative;
-  transition: color 0.2s;
-}
-
-.info-card a::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: #C9A84C;
-  transition: width 0.3s ease;
-}
-
-.info-card a:hover::after {
-  width: 100%;
-}
-
-/* Staggered Scroll Reveal */
-@keyframes cardRise {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.info-card.show {
-  animation: cardRise 0.55s cubic-bezier(.22, .68, 0, 1.2) forwards;
-}
-
-.info-card:nth-child(1).show {
-  animation-delay: 0.05s;
-}
-
-.info-card:nth-child(2).show {
-  animation-delay: 0.12s;
-}
-
-.info-card:nth-child(3).show {
-  animation-delay: 0.19s;
-}
-
-.info-card:nth-child(4).show {
-  animation-delay: 0.26s;
-}
-
-/* =========================================
-   4. FORM & SIDEBAR LAYOUT
-   ========================================= */
+/* FORM & SIDEBAR LAYOUT */
 .form-section {
   padding: 60px 50px 80px;
   background: #f5f5f5;
@@ -420,17 +240,6 @@ nav {
   display: inline-block;
 }
 
-.mail-link::after {
-  content: '';
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: #C9A84C;
-  transition: width 0.3s ease;
-}
-
 .mail-link:hover::after {
   width: 100%;
 }
@@ -472,9 +281,8 @@ nav {
   color: #fff;
 }
 
-/* =========================================
-   5. ALERTS & BUTTONS
-   ========================================= */
+
+ /*  ALERTS & BUTTONS */
 .btn-submit {
   background: #8B0000;
   color: #fff;
@@ -515,7 +323,7 @@ nav {
   color: #991b1b;
 }
 
-/* CTA STRIP & FOOTER */
+/* CTA STRIP  */
 .contact-cta {
   background: #8B0000;
   padding: 60px 50px;
@@ -598,7 +406,6 @@ nav {
 }
 
 /* Footer */
-/* ===== SAFE CARZ FOOTER STYLES ===== */
 .sc-footer {
     background: #111111;
     padding: 80px 0 40px;
@@ -712,7 +519,6 @@ nav {
     letter-spacing: 1px;
 }
 
-/* Responsive adjust for the grid */
 @media (max-width: 768px) {
     .sc-footer {
         padding: 50px 0 30px;
@@ -741,9 +547,7 @@ nav {
   transform: translateY(0);
 }
 
-/* =========================================
-   8. RESPONSIVE
-   ========================================= */
+/* Media Queries */
 @media (max-width: 900px) {
   nav {
     padding: 14px 20px;

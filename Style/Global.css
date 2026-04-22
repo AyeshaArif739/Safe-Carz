@@ -121,7 +121,6 @@ nav {
   margin: 0 20px;
 }
 
-/* This locks the nav height and prevents jumping */
 nav {
   height: 80px !important;
   display: flex !important;
@@ -133,14 +132,12 @@ nav {
   box-sizing: border-box !important;
 }
 
-/* This locks the logo size so it can't shift */
 .nav-logo img {
   height: 60px !important;
   width: 210px !important;
   display: block !important;
 }
 
-/* This locks the button size and padding */
 .navbutton {
   padding: 10px 20px !important;
   font-size: 13px !important;
@@ -155,23 +152,17 @@ nav {
 
 .nav-logo {
   width: 210px;
-  /* Match your image width */
   flex-shrink: 0;
-  /* Prevents the logo from getting squashed on small screens */
 }
 
 .nav-logo img {
   height: 60px;
   width: 210px;
-  /* border: 1px solid red; */
-
 }
 
 .nav-logo {
   width: 210px;
-  /* Match your image width */
   flex-shrink: 0;
-  /* Prevents the logo from getting squashed on small screens */
 }
 
 .navlinks {
@@ -237,7 +228,6 @@ nav {
   }
 }
 
-/* ── Mobile Nav Fix ── */
 @media (max-width: 991px) {
   nav {
     padding: 0 16px !important;
@@ -253,7 +243,6 @@ nav {
     width: 148px !important;
   }
 
-  /* Hide everything in nav-right on tablet/mobile */
   .nav-right {
     display: none !important;
   }
@@ -287,7 +276,7 @@ nav {
   }
 }
 
-/* ── Hamburger Button ── */
+/*  Hamburger Button  */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -319,7 +308,6 @@ nav {
   transform: translateY(-7px) rotate(-45deg);
 }
 
-/* ── Mobile Nav (Global — applies to ALL pages) ── */
 @media (max-width: 991px) {
   .hamburger {
     display: flex;

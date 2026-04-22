@@ -35,40 +35,6 @@
     margin: 0 auto;
 }
 
-/* TABS */
-/* .tabs-wrapper {
-    background: #1a1a1a;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    overflow-x: auto;
-    position: sticky;
-    top: 80px;
-    z-index: 100;
-}
-
-.tabs-wrapper::-webkit-scrollbar { height: 3px; }
-.tabs-wrapper::-webkit-scrollbar-thumb { background: #8B0000; }
-
-.tab-btn {
-    padding: 18px 28px;
-    background: none;
-    border: none;
-    color: rgba(255, 255, 255, 0.5);
-    font-family: 'Poppins', sans-serif;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    cursor: pointer;
-    white-space: nowrap;
-    border-bottom: 3px solid transparent;
-    transition: all 0.25s;
-}
-
-.tab-btn:hover { color: #fff; }
-.tab-btn.active { color: #C9A84C; border-bottom-color: #C9A84C; } */
-
 /* FILTER BAR */
 .filter-bar {
     background: #1a1a1a;
@@ -265,7 +231,7 @@
     background: #f9f9f9;
 }
 
-/* ── PLAN CARD — matches Vehicles page style ── */
+/*  PLAN CARD  */
 .plan-card {
     background: #fff;
     border: 1px solid #e8e8e8;
@@ -286,7 +252,6 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08), 0 16px 32px rgba(139, 0, 0, 0.09);
 }
 
-/* ── CARD TOP STRIPE (dark header like Vehicles page) ── */
 .plan-card-top {
     padding: 18px 20px 16px;
     border-bottom: 3px solid #8B0000;
@@ -575,7 +540,6 @@
 }
 
 /* FOOTER */
-/* ===== SAFE CARZ FOOTER STYLES ===== */
 .sc-footer {
     background: #111111;
     padding: 80px 0 40px;
@@ -689,7 +653,7 @@
     letter-spacing: 1px;
 }
 
-/* Responsive adjust for the grid */
+/* Media Queries */
 @media (max-width: 768px) {
     .sc-footer {
         padding: 50px 0 30px;
@@ -710,7 +674,6 @@
     }
 }
 
-/* RESPONSIVE */
 @media (max-width: 900px) {
     .company-intro {
         grid-template-columns: 1fr;
@@ -760,26 +723,82 @@
 
 
 @media (max-width: 991px) {
-  .page-hero { margin-top: 64px; }
-  .filter-bar { top: 64px; }
-  .company-intro { grid-template-columns: 1fr; gap: 30px; }
-  .company-intro, .plans-heading, .plans-grid { padding-left: 30px; padding-right: 30px; }
-  .plans-grid { grid-template-columns: repeat(2, 1fr); }
-  .cta-section { padding: 50px 30px; }
+    .page-hero {
+        margin-top: 64px;
+    }
+
+    .filter-bar {
+        top: 64px;
+    }
+
+    .company-intro {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .company-intro,
+    .plans-heading,
+    .plans-grid {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .plans-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta-section {
+        padding: 50px 30px;
+    }
 }
 
 @media (max-width: 600px) {
-  .page-hero { margin-top: 64px; padding: 60px 20px; }
-  .page-hero h1 { font-size: 28px; }
-  .filter-bar { top: 64px; }
-  .plans-grid { grid-template-columns: 1fr; }
-  .company-intro, .plans-heading, .plans-grid { padding-left: 20px; padding-right: 20px; }
-  .cta-btns { flex-direction: column; align-items: center; }
+    .page-hero {
+        margin-top: 64px;
+        padding: 60px 20px;
+    }
+
+    .page-hero h1 {
+        font-size: 28px;
+    }
+
+    .filter-bar {
+        top: 64px;
+    }
+
+    .plans-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .company-intro,
+    .plans-heading,
+    .plans-grid {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .cta-btns {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media (max-width: 480px) {
-  .page-hero { margin-top: 58px; }
-  .filter-bar { top: 58px; }
-  .filter-row-company { gap: 6px; padding: 8px 12px 10px; }
-  .company-btn { padding: 5px 10px; font-size: 10px; }
+    .page-hero {
+        margin-top: 58px;
+    }
+
+    .filter-bar {
+        top: 58px;
+    }
+
+    .filter-row-company {
+        gap: 6px;
+        padding: 8px 12px 10px;
+    }
+
+    .company-btn {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
 }

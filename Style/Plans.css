@@ -1,4 +1,4 @@
-/* ── PAGE HERO ── */
+/*  PAGE HERO  */
 .page-hero {
   margin-top: 80px;
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
@@ -36,7 +36,7 @@
   margin: 0 auto;
 }
 
-/* ── FILTER BAR ── */
+/*  FILTER BAR  */
 .filter-bar {
   background: #1a1a1a;
   position: sticky;
@@ -103,7 +103,7 @@
   border-bottom-color: #C9A84C;
 }
 
-/* ── RESULTS BAR ── */
+/*  RESULTS BAR  */
 .results-bar {
   background: #f5f5f5;
   padding: 14px 50px;
@@ -143,7 +143,7 @@
   cursor: pointer;
 }
 
-/* ── PLANS GRID ── */
+/*  PLANS GRID  */
 .plans-section {
   padding: 50px 50px 80px;
   background: #f9f9f9;
@@ -155,7 +155,6 @@
   gap: 22px;
 }
 
-/* ── PLAN CARD — matches Vehicles page style ── */
 .plan-card {
   background: #fff;
   border: 1px solid #e8e8e8;
@@ -182,7 +181,6 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08), 0 16px 32px rgba(139, 0, 0, 0.09);
 }
 
-/* ── CARD TOP STRIPE (dark header like Vehicles page) ── */
 .plan-card-top {
   padding: 18px 20px 16px;
   border-bottom: 3px solid #8B0000;
@@ -234,7 +232,7 @@
   z-index: 2;
 }
 
-/* ── CARD BODY ── */
+/*  CARD BODY  */
 .plan-body {
   padding: 18px 20px 20px;
 }
@@ -355,7 +353,6 @@
   color: #fff;
 }
 
-/* Keep old btn-get-quote as alias */
 .btn-get-quote {
   background: #8B0000;
   color: #fff;
@@ -380,7 +377,7 @@
   color: #fff;
 }
 
-/* ── FADE ANIMATION ── */
+/*  FADE ANIMATION  */
 .fade {
   opacity: 0;
   transform: translateY(24px);
@@ -409,7 +406,7 @@
   animation: cardRise 0.45s cubic-bezier(.22, .68, 0, 1.2) forwards;
 }
 
-/* ── NO RESULTS ── */
+/*  NO RESULTS  */
 .no-results {
   grid-column: 1 / -1;
   text-align: center;
@@ -435,7 +432,7 @@
   color: #bbb;
 }
 
-/* ── CTA SECTION ── */
+/*  CTA SECTION  */
 .cta-section {
   background: #8B0000;
   padding: 70px 50px;
@@ -517,118 +514,118 @@
   color: #C9A84C;
 }
 
-/* ── Footer ── */
+/*  Footer  */
 .sc-footer {
-    background: #111111;
-    padding: 80px 0 40px;
-    font-family: 'Poppins', sans-serif;
+  background: #111111;
+  padding: 80px 0 40px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .sc-footer-heading {
-    color: #C9A84C;
-    margin-bottom: 25px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-size: 14px;
-    position: relative;
-    padding-bottom: 12px;
+  color: #C9A84C;
+  margin-bottom: 25px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  padding-bottom: 12px;
 }
 
 .sc-footer-heading::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 35px;
-    height: 2px;
-    background: #8B0000;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 35px;
+  height: 2px;
+  background: #8B0000;
 }
 
 .sc-footer-text {
-    color: rgba(255, 255, 255, 0.6);
-    line-height: 1.8;
-    font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.8;
+  font-size: 13px;
 }
 
 .sc-footer-links {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .sc-footer-links li {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .sc-footer-links li a {
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition: all 0.3s ease;
-    font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  font-size: 13px;
 }
 
 .sc-footer-links li a:hover {
-    color: #C9A84C;
-    transform: translateX(5px);
+  color: #C9A84C;
+  transform: translateX(5px);
 }
 
 .sc-footer-links li a i {
-    font-size: 10px;
-    color: #8B0000;
+  font-size: 10px;
+  color: #8B0000;
 }
 
 .sc-footer-contact-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    margin-bottom: 15px;
-    font-size: 13px;
-    color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 15px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .sc-footer-contact-item i {
-    color: #C9A84C;
-    margin-top: 4px;
+  color: #C9A84C;
+  margin-top: 4px;
 }
 
 .sc-footer-contact-item a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 .sc-social-icons a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 35px;
-    height: 35px;
-    background: rgba(255,255,255,0.05);
-    border-radius: 4px;
-    margin-right: 10px;
-    color: #fff;
-    transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+  margin-right: 10px;
+  color: #fff;
+  transition: all 0.3s ease;
 }
 
 .sc-social-icons a:hover {
-    background: #8B0000;
-    color: #fff;
-    transform: translateY(-3px);
+  background: #8B0000;
+  color: #fff;
+  transform: translateY(-3px);
 }
 
 .sc-footer-hr {
-    height: 1px;
-    background: rgba(255, 255, 255, 0.05);
-    margin: 40px 0 30px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 40px 0 30px;
 }
 
 .sc-footer-bottom {
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0.3);
-    text-align: center;
-    letter-spacing: 1px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  letter-spacing: 1px;
 }
 
 /* ── RESPONSIVE ── */
@@ -691,28 +688,30 @@
   animation: cardEnter 0.5s cubic-bezier(0.22, 0.68, 0, 1.15) both;
 }
 
-/* override Plans.css fade for dynamically inserted cards */
 .plan-card {
   opacity: 1;
   transform: none;
 }
 
-/* Responsive adjust for the grid */
+/* Responsive */
 @media (max-width: 768px) {
-    .sc-footer {
-        padding: 50px 0 30px;
-        text-align: center;
-    }
-    .sc-footer-heading::after {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .sc-footer-links li a {
-        justify-content: center;
-    }
-    .sc-footer-contact-item {
-        justify-content: center;
-    }
+  .sc-footer {
+    padding: 50px 0 30px;
+    text-align: center;
+  }
+
+  .sc-footer-heading::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .sc-footer-links li a {
+    justify-content: center;
+  }
+
+  .sc-footer-contact-item {
+    justify-content: center;
+  }
 }
 
 @keyframes fadeInUp {
@@ -774,6 +773,7 @@
     letter-spacing: 3px;
   }
 }
+
 @keyframes pulseGlow {
 
   0%,
@@ -835,27 +835,78 @@
 }
 
 @media (max-width: 991px) {
-  .page-hero { margin-top: 64px; }
-  .filter-bar { top: 64px; }
-  .plans-grid { grid-template-columns: repeat(2, 1fr); }
-  .plans-section { padding: 30px 30px 60px; }
-  .results-bar { padding: 14px 20px; }
+  .page-hero {
+    margin-top: 64px;
+  }
+
+  .filter-bar {
+    top: 64px;
+  }
+
+  .plans-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .plans-section {
+    padding: 30px 30px 60px;
+  }
+
+  .results-bar {
+    padding: 14px 20px;
+  }
 }
 
 @media (max-width: 700px) {
-  .page-hero { margin-top: 64px; padding: 60px 20px; }
-  .page-hero h1 { font-size: 28px; }
-  .filter-bar { top: 64px; }
-  .filter-row { justify-content: flex-start; }
-  .plans-grid { grid-template-columns: 1fr; }
-  .plans-section { padding: 20px 16px 50px; }
-  .cta-section { padding: 50px 20px; }
-  .cta-btns { flex-direction: column; align-items: center; }
+  .page-hero {
+    margin-top: 64px;
+    padding: 60px 20px;
+  }
+
+  .page-hero h1 {
+    font-size: 28px;
+  }
+
+  .filter-bar {
+    top: 64px;
+  }
+
+  .filter-row {
+    justify-content: flex-start;
+  }
+
+  .plans-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .plans-section {
+    padding: 20px 16px 50px;
+  }
+
+  .cta-section {
+    padding: 50px 20px;
+  }
+
+  .cta-btns {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (max-width: 480px) {
-  .page-hero { margin-top: 58px; }
-  .filter-bar { top: 58px; }
-  .tab-btn { padding: 10px 12px; font-size: 10px; }
-  .filter-label { display: none; }
+  .page-hero {
+    margin-top: 58px;
+  }
+
+  .filter-bar {
+    top: 58px;
+  }
+
+  .tab-btn {
+    padding: 10px 12px;
+    font-size: 10px;
+  }
+
+  .filter-label {
+    display: none;
+  }
 }
