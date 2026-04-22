@@ -142,7 +142,10 @@
 .slide.active .btns {
   animation: fadeInUp 0.65s 0.75s ease both;
 }
-
+.btn-red, .btn-white, .btn-gold {
+  position: relative;
+  overflow: hidden;
+}
 .btn-red::after,
 .btn-gold::after {
   content: '';
