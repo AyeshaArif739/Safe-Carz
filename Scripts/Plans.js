@@ -277,7 +277,7 @@ function buildCard(p, index) {
     '<div class="plan-price-label">Starting from</div>' +
     '<div class="plan-price">PKR ' + p.price.toLocaleString() + ' <span>/ year</span></div>' +
     '</div>' +
-    '<a href="Contact.html" class="btn-insure">Get Quote</a>' +
+    '<a href="Contact.html" class="btn-insure">Contact</a>' +
     '</div>' +
     '</div>';
 

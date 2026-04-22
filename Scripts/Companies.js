@@ -36,7 +36,7 @@ function applyFilters() {
 const insuranceData = [
   {
     id: "zurich",
-    name: "Zurich Insurance",
+    name: "Zurich Insurance ",
     badge: "International Insurer · Est. 1872",
     description: "One of the world's leading insurers, Zurich brings global-standard vehicle protection to Pakistan. Known for premium comprehensive coverage, fast claim processing, and exceptional customer service.",
     image: "Assets/Zurich-img.webp",
@@ -117,10 +117,12 @@ const insuranceData = [
 const renderContainer = document.getElementById('companies-render-container');
 
 function renderAllCompanies() {
+  // insuranceData.sort((a , b) => a.name.localeCompare(b.name))
   renderContainer.innerHTML = '';
 
   insuranceData.forEach(company => {
-    const plansHtml = company.plans.map(plan => `
+    const plansHtml = company.plans.
+    map(plan => `
       <div class="plan-card">
         <div class="plan-card-top">
           <div class="plan-company-logo">${company.name}</div>
@@ -140,7 +142,7 @@ function renderAllCompanies() {
               <div class="plan-price-label">Starting from</div>
               <div class="plan-price">PKR ${plan.price} <span>/ year</span></div>
             </div>
-            <a href="Plans.html" class="btn-insure">Get Quote</a>
+            <a href="Contact.html" class="btn-insure">Contact</a>
           </div>
         </div>
       </div>
