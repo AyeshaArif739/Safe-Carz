@@ -411,7 +411,7 @@
   animation-delay: 0.40s;
 }
 
-/* ── Partners ── */
+/*  Partners  */
 .partner-img {
   display: flex;
   gap: 50px;
@@ -462,7 +462,7 @@
   transform: scale(1.1);
 }
 
-/* ── Plans Section ── */
+/*  Plans Section  */
 .plans-section {
   padding: 80px 50px;
   background: #fff;
@@ -684,7 +684,7 @@
   box-shadow: 0 24px 50px rgba(0, 0, 0, 0.18);
 }
 
-/* ── Animation ── */
+/*  Animation  */
 .feature-quote {
   position: relative;
   transition: border-left-color 0.4s ease, padding-left 0.3s ease;
@@ -828,7 +828,7 @@
   animation: floatY 3s 1.5s ease-in-out infinite;
 }
 
-/* ── Footer ── */
+/*  Footer  */
 .sc-footer {
   background: #111111;
   padding: 80px 0 40px;

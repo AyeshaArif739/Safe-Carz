@@ -14,7 +14,6 @@ nav {
 .page-hero {
   margin-top: 0;
   padding: 140px 50px 130px;
-  /* +50px from original 90px */
   background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),
     url('../Assets/Contact-hero-img.webp') center/cover no-repeat;
   text-align: center;
