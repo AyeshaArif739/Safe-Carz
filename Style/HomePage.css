@@ -23,10 +23,17 @@
   object-fit: cover;
 }
 
+.slide .btns a {
+    position: relative;
+    z-index: 100;
+    pointer-events: all;
+}
+
 .slide-overlay {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.52);
+  pointer-events: none;
 }
 
 .slide-text {
